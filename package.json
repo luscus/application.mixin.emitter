@@ -1,0 +1,32 @@
+{
+  "name": "application.mixin.emitter",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "./lib/application.mixin.emitter",
+  "homepage": "https://github.com/luscus/application.mixin.emitter",
+  "author": "https://github.com/luscus/application.mixin.emitter/graphs/contributors",
+  "bugs": "https://github.com/luscus/application.mixin.emitter/issues",
+  "description": "Application Framework Mixin: adds eventing to the application",
+  "keywords": [
+    "application.mixin.emitter",
+    "framework"
+  ],
+  "dependencies": {
+    "prototype-less": "0.0.2"
+  },
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-contrib-jshint": "0.10.0",
+    "grunt-mocha-test": "0.10.2",
+    "load-grunt-tasks": "0.6.0",
+    "chai": "1.9.1",
+    "mocha": "1.21.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:luscus/application.mixin.emitter.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
+}
