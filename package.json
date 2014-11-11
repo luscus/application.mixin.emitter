@@ -12,7 +12,6 @@
     "framework"
   ],
   "dependencies": {
-    "prototype-less": "0.0.2"
   },
   "devDependencies": {
     "grunt": "0.4.5",
