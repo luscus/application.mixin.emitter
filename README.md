@@ -3,7 +3,39 @@
 [![dependencies](https://david-dm.org/luscus/application.mixin.emitter.svg)](https://david-dm.org/luscus/application.mixin.emitter)
 [![devDependency Status](https://david-dm.org/luscus/application.mixin.emitter/dev-status.svg?theme=shields.io)](https://david-dm.org/luscus/application.mixin.emitter#info=devDependencies)
 
-Application Framework Mixin: adds eventing to the application.
+[Application Framework](https://github.com/luscus/application.skeleton) Mixin: adds eventing to the application.
+
+
+## Added Properties and Methods
+
+### Property "emitter"
+
+Holds an instance of Node's [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
+
+### Method "on"
+
+Reference the [EventEmitter's "on"](http://nodejs.org/api/events.html#events_emitter_on_event_listener) method.
+
+### Method "emit"
+
+Reference the [EventEmitter's "emit"](http://nodejs.org/api/events.html#events_emitter_emit_event_arg1_arg2) method.
+
+
+## Usage
+
+Your application project has to build upon the [application.skeleton](https://github.com/luscus/application.skeleton) and you only have to set the new dependency:
+
+    npm install application.mixin.emitter --save
+
+The `application.skeleton` will do all the work adding the Mixins as this one.
+
+Simply use the new functionality:
+
+    {
+      emitter: <new EventEmitter()>,
+      emit: <this.emitter.emit>,
+      on: <this.emitter.on>
+    }
 
 --------------
 Copyright (c) 2014 Luscus (luscus.redbeard@gmail.com)
